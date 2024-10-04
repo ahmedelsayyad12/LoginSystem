@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- <link rel="stylesheet" href="css/animation.css"> -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Smart Login System</title>
+</head>
+<body>
+    <section class=" vh-100 position-relative ">
+        <div class="container d-flex justify-content-center align-items-center h-100">
+            <form action="" class="w-50 p-5 " id="login">
+                <h1 class="fw-bold mb-4">Hello! Welcome Back</h1>
+                <input type="email" class="form-control mb-4" name="loginUserEmail" id="loginUserEmail" placeholder="Enter your Email">
+                <input type="password" class="form-control mb-4" name="loginUserPassword" id="loginUserPassword" placeholder="Enter your password">
+                <p class="fw-medium login-alert d-none fs-5">incorrect email or password</p>
+                <p class="fw-medium input-alert d-none fs-5">All inputs is required</p>
+                <button class="btn btn-outline-info w-100 fw-medium  fs-4" id="loginBtn">Login</button>
+                <p class="fw-medium mt-4">Don't have an account? <span class="fw-bold " id="signUpSpan">Sign Up</span></p>
+            </form>
+            <form action="" class="w-50 p-5 d-none" id="signUpForm">
+                <h1 class="fw-bold mb-4">Create New Account</h1>
+                <input type="text" class="form-control mb-4" name="userName" id="userName" placeholder="Enter your Name">
+                <input type="email" class="form-control mb-4" name="userEmail" id="userEmail" placeholder="Enter your Email">
+                <div class="email-exist d-none fs-5">
+                    <p>email already exist</p>
+                </div>
+                <input type="password" class="form-control mb-4" name="userPassword" id="userPassword" placeholder="Enter your password">
+                <div class="password-alert ">
+                    <table class="text-start text-warning mb-2">
+                        <tr>
+                            <td>-Minimum eight characters</td>
+                            <td>-at least one letter</td>
+                        </tr>
+                        <tr>
+                            <td>-one number</td>
+                            <td>-one special character</td>
+                        </tr>
+                    </table>
+                   
+                </div>
+                <p class="fw-medium signup-alert d-none sign-success">Success</p>
+                <p class="fw-medium input-alert d-none alertMsg">All inputs is required</p>
+                <button class="btn btn-outline-info w-100  fs-4 fw-medium" id="signUpBtn">Sign Up</button>
+                <p class="fw-medium mt-4">You have an account? <span class="fw-bold " id="loginSpan">Sign In</span></p>
+            </form>
+        </div>
+    </section>
+
+
+
+
+
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

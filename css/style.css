@@ -1,0 +1,49 @@
+section{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../images/undraw_login_re_4vu2.svg);
+    /* background-position: center; */
+    background-size:auto ;
+    background-repeat: no-repeat;
+
+}
+h1{
+    color: #fff;
+    animation: flicker 1.5s infinite alternate;
+}
+p{
+    color: #fff;
+}
+form{
+    background-color: rgba(0, 0, 0, 0.7);
+    position: relative;
+    text-align: center;
+    z-index: 2;
+    backdrop-filter: blur(2px);
+}
+button{
+    color: #fff !important;
+}
+span{
+    cursor: pointer;
+}
+.login-alert , .input-alert{
+    color: #ff0000;
+    
+}
+.signup-alert{
+    color: #0bff0b;
+    
+}
+.password-alert td{
+    padding-left: 10px;
+   color: #c8ff00;
+}
+.email-exist p{
+    color: #ff0000;
+    
+}
+
